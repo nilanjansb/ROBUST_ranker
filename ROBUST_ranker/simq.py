@@ -27,7 +27,7 @@ class SimQ():
         CLI.add_argument("--count", type=int, default=5) # maximum number of new queries to generate
         CLI.add_argument("--llm", type=str, default='meta-llama/Meta-Llama-3-8B-Instruct')
         CLI.add_argument("--qtype", type=str, choices=['generic', 'specific', 'paraphrase', 'mixed'])
-        CLI.add_argument("--token", type=str, default="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")
+        CLI.add_argument("--token", type=str)
         CLI.add_argument("--test", type=bool, default=False)
 
         args = CLI.parse_args()
